@@ -34,7 +34,6 @@ void PrintArray(double[,]matrix)
 Console.Clear();
 Console.Write("Введите размер массива ч/з пробел: ");
 int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
-//Console.WriteLine(size[0] + size[1]);
 double[,] array = new double[size[0], size[1]];
 FillArray(array);
 PrintArray(array);
